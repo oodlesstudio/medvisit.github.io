@@ -1,0 +1,295 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container-fluid{
+    max-width: 1440px;
+    height: auto;
+}
+.w-15{
+    width: 15%;
+}
+.w-20{
+    width: 20%;
+}
+.w-35{
+    width: 35%;
+}
+.w-40{
+    width: 40%;
+}
+.margin-l10{
+    margin-left: 10px;
+}
+.padding-l25{
+    padding-left: 25px;
+}
+.margin-l30{
+    margin-left: 30px;
+}
+.margin-t10{
+    margin-top: 10px;
+}
+.margin-b11{
+    margin-bottom: 11px;
+}
+
+/* Dashboard Left */
+.dashboard-left{
+    width: 268px;
+    height: auto;
+    background: #17234D;
+    color: #fff;
+    font-weight: 500;
+}
+.doctor-details{
+    margin-top: 55px;
+    margin-bottom: 61px;
+}
+.doctor{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 61px;
+    padding: 5px;
+}
+.green-tick{
+    margin-top: -30px;
+}
+.doctor-details h6{
+    margin-bottom: 5px;
+}
+.doctor-details span{
+    color: #E0E0E0;
+    font-size: 12px;
+}
+.dashboard-left .nav .nav-link{
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 33px;
+}
+.dashboard-left .nav img{
+    margin-right: 16px;
+}
+.dashboard-left .nav .active{
+    color: #726EFF;
+}
+
+
+/* Dashboard Right */
+.dashboard-right{
+    width: calc(100% - 268px);
+    height: auto;
+    background: #E5E5E5;
+}
+
+/* Header */
+.bg-light{
+    background: #fff !important;
+}
+.header .navbar{
+    padding: 10px 12px;
+}
+.navbar-brand{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #000 !important;
+    margin-left: 12px;
+}
+.navbar-brand img{
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.header-top{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0;
+}
+.clinic{
+    font-size: 10px;
+    color: #828282;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.header img{
+    margin-left: 5px;
+}
+.header .fa-chevron-down{
+    margin-left: 11px;
+    margin-right: 18px;
+    font-size: 11px;
+}
+
+/* Appointments Nav */
+.appointments-nav{
+    background: #fff;
+    border-bottom: 1px solid #F2F2F2;
+    padding-left: 28px;
+}
+.appointments-nav .nav-link{
+    font-size: 15px;
+    font-weight: 500;
+    color: #4F4F4F;
+    padding: 10px 0;
+    margin: 0 20px;
+}
+.appointments-nav .active{
+    color: #726EFF;
+    border-bottom: 2px solid #726EFF;
+}
+
+
+/* Appointments */
+.appointments{
+    margin: 23px 36px;
+}
+.appointment-title{
+    padding: 0;
+}
+.appointment-title p{
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+}
+.appointments-today{
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 0;
+}
+.appointment-one{
+    border-bottom: 1px solid #E0E0E0;
+    padding: 15px 0;
+}
+.field-one img{
+    margin-right: 5px;
+}
+.field-one p,
+.field-two,
+.field-three,
+.field-four{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+}
+.field-one p{
+    margin-bottom: -5px;
+}
+.field-one span{
+    font-size: 10px;
+    font-weight: 500;
+    color: #4F4F4F;
+}
+.field-five img{
+    margin-right: 6px;
+}
+.field-five a{
+    font-size: 10px;
+    font-weight: 500;
+    padding: 9px 10px 9px 11px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: inline-block;
+}
+.attended{
+    border: 1px solid #27AE60;
+    color: #27AE60;
+}
+.reschedule{
+    border: 1px solid #726EFF;
+    color: #726EFF;
+}
+.attend-bg{
+    background: #736eff25;
+    color: #726EFF;
+    padding: 4px 10px 4px 9px !important;
+    border-radius: 5px !important;
+}
+.cancel{
+    border: 1px solid #EB5757;
+    color: #EB5757;
+}
+.reject-bg{
+    background: #eb575725;
+    color: #EB5757;
+    padding: 4px 10px 4px 9px !important;
+    border-radius: 5px !important;
+}
+
+
+/* Appointment Date */
+.appointment-date{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.appointment-date form{
+    padding: 14px 48px;
+    padding-bottom: 23px;
+}
+.appointment-date label{
+    color: #4F4F4F;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.appointment-date .form-select,
+.appointment-date .form-control{
+    border-radius: 5px;
+    border-color: #BDBDBD;
+    font-size: 12px;
+    color: #000;
+    padding: 7px 91px 8px 9px;
+}
+.appointment-location .form-control{
+    padding-right: 12px;
+    border: none;
+}
+.appointment-location ::placeholder{
+    color: #000;
+}
+.location-icon{
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+.appointment-state .form-select{
+    padding-right: 103px;
+}
+.appointment-date .form-select:focus,
+.appointment-date .form-control:focus{
+    box-shadow: none;
+}
+.appointment-date-left{
+    margin-right: 10px;
+}
+.appointment-date-right{
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 13px;
+}
+.appointment-date-right .fa-calendar-alt{
+    color: #828282;
+}
+.appointment-clear a{
+    background: #726EFF;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 15px 8px 17px;
+}
+
+.form-p9{
+    padding: 9px 8px;
+}
+

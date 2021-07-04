@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/appointments.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Medvisit - Appointments</title>
+</head>
+
+<body>
+    <!-- Dashboard -->
+    <section class="dashboard">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Dashboard Left -->
+                <div class="dashboard-left">
+                    <div class="doctor-details text-center">
+                        <div>
+                            <img src="img/doctor.png" alt="Doctor" class="doctor">
+                        </div>
+                        <div>
+                            <img src="img/icons/green-tick.png" class="green-tick">
+                        </div>
+                        <h6>Dr. Phillip Bator</h6>
+                        <span>Dermatologist</span>
+                    </div>
+
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="dashboard.html"><img src="img/icons/dashboard-white.png">Dashboard</a>
+                        <a class="nav-link active" aria-current="page" href="appointments.html"><img
+                                src="img/icons/appointment-purple.png">Appointments</a>
+                        <a class="nav-link" href="#"><img src="img/icons/calender-white.png">Calendar</a>
+                        <a class="nav-link" href="#"><img src="img/icons/ratings.png">Ratings & Reviews</a>
+                        <a class="nav-link" href="#"><img src="img/icons/qnas.png">Q n A’ s</a>
+                        <a class="nav-link" href="profile.html"><img src="img/icons/profile.png">Profile</a>
+                        <a class="nav-link" href="#"><img src="img/icons/settings.png">Settings</a>
+                    </nav>
+                </div>
+
+                <!-- Dashboard Right -->
+                <div class="dashboard-right">
+                    <!-- Header -->
+                    <div class="row header">
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="index.html" title="Medvisit"><img src="img/icons/plus.png"> Medvisit.</a>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="text-end">
+                                        <p class="header-top">Amet, massa praesent fames ornare.</p>
+                                        <p class="clinic">Clininc</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/icons/building.png">
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- Appointments Nav -->
+                    <div class="row appointments-nav">
+                        <nav class="nav">
+                            <a class="nav-link" href="appointments.html">Today</a>
+                            <a class="nav-link active" aria-current="page" href="requests.html">Requests</a>
+                            <a class="nav-link" href="confirmed.html">Confirmed</a>
+                            <a class="nav-link" href="rejected.html">Rejected</a>
+                            <a class="nav-link" href="attended.html">Attended</a>
+                        </nav>
+                    </div>
+
+                    <!-- Appointment Date -->
+                    <div class="row appointment-date">
+                        <form class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <div class="d-flex">
+                                    <div class="appointment-date-left">
+                                        <label for="inputDate" class="form-label">Date of Appointment</label>
+                                        <select id="inputDate" class="form-select">
+                                            <option selected>May 26, 2021</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="appointment-date-right">
+                                        <i class="far fa-calendar-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="margin-l30 appointment-location">
+                                    <label for="inputLocation" class="form-label">Location</label>
+                                    <div class="d-flex align-items-center location-icon">
+                                        <input type="text" class="form-control" id="inputLocation"
+                                            placeholder="New York">
+                                        <img src="img/icons/location.png">
+                                    </div>
+                                </div>
+                                <div class="margin-l30 appointment-state">
+                                    <label for="inputState" class="form-label">In egestas diam.</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Sed.</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="appointment-clear">
+                                <a href="#">Clear</a>
+                            </div>
+                        </form>
+
+
+                    </div>
+
+                    <!-- Appointments -->
+                    <div class="row appointments">
+                        <!-- Appointment Title -->
+                        <div class="d-flex appointment-title">
+                            <p class="w-20 padding-l25">Patient Name</p>
+                            <p class="w-15">Date</p>
+                            <p class="w-15">Time</p>
+                            <p class="w-15">Contact</p>
+                            <p class="w-15">Address</p>
+                            <p class="w-20 text-center">Action</p>
+                        </div>
+
+                        <div class="appointments-today">
+                            <!-- Appointment One -->
+                            <div class="appointment-one d-flex margin-t10">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Corey Donin</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    May 25, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    10:00 A.M
+                                </div>
+                                <div class="field-three w-15">
+                                    8549331195
+                                </div>
+                                <div class="field-four w-15">
+                                    New York
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Two -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Tatiana Rosser</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    June 29, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    11:00 A.M
+                                </div>
+                                <div class="field-three w-15">
+                                    9546663134
+                                </div>
+                                <div class="field-four w-15">
+                                    Houstan
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Three -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Corey Press</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    June 01, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    12:00 P.M
+                                </div>
+                                <div class="field-three w-15">
+                                    9547621547
+                                </div>
+                                <div class="field-four w-15">
+                                    Chicago
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Four -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Justin Ekstrom</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    June 05, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    10:00 A.M
+                                </div>
+                                <div class="field-three w-15">
+                                    8765495831
+                                </div>
+                                <div class="field-four w-15">
+                                    Dallas
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Five -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Chance Gouse</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    July 10, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    01:00 P.M
+                                </div>
+                                <div class="field-three w-15">
+                                    9784587615
+                                </div>
+                                <div class="field-four w-15">
+                                    Seattle
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Six -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Maria Aminoff</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    Aug 13, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    03:00 P.M
+                                </div>
+                                <div class="field-three w-15">
+                                    9566455823
+                                </div>
+                                <div class="field-four w-15">
+                                    New York
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Appointment Seven -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Haylie Geidt</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    Sep 13, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    10:00 A.M
+                                </div>
+                                <div class="field-three w-15">
+                                    9876486241
+                                </div>
+                                <div class="field-four w-15">
+                                    New York
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Eight -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Adison Geidt</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    Sep 15, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    11:00 A.M
+                                </div>
+                                <div class="field-three w-15">
+                                    8959957614
+                                </div>
+                                <div class="field-four w-15">
+                                    Dallas
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Nine -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Desirae Siphron</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    Oct 25, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    09:00 A.M
+                                </div>
+                                <div class="field-three w-15">
+                                    8921475632
+                                </div>
+                                <div class="field-four w-15">
+                                    New York
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Ten -->
+                            <div class="appointment-one d-flex">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Aspen Carder</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    Nov 04, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    04:00 P.M
+                                </div>
+                                <div class="field-three w-15">
+                                    9487631547
+                                </div>
+                                <div class="field-four w-15">
+                                    Fort Worth
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Appointment Eleven -->
+                            <div class="appointment-one d-flex margin-b11">
+                                <div class="field-one w-20 d-flex align-items-center padding-l25">
+                                    <div>
+                                        <img src="img/icons/ryan.png">
+                                    </div>
+                                    <div>
+                                        <p>Davis Workman</p>
+                                        <span>#1234567890</span>
+                                    </div>
+                                </div>
+                                <div class="field-two w-15">
+                                    Dec 12, 2021
+                                </div>
+                                <div class="field-two w-15">
+                                    10:00 A.M
+                                </div>
+                                <div class="field-three w-15">
+                                    9517531562
+                                </div>
+                                <div class="field-four w-15">
+                                    Columbus
+                                </div>
+                                <div class="field-five w-20 text-center">
+                                    <a href="#" class="attended"><img src="img/icons/right-sm.png">Approve</a>
+                                    <a href="#" class="cancel margin-l10"><img src="img/icons/wrong-sm.png">Reject</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Required JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

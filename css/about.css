@@ -1,0 +1,440 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container-fluid{
+    max-width: 1440px;
+    height: auto;
+}
+.margin-l10{
+    margin-left: 10px;
+}
+.margin-b10{
+    margin-bottom: 10px;
+}
+.margin-b193{
+    margin-bottom: 193px !important;
+}
+
+/* Header */
+.header-top{
+    margin: 32px 0;
+}
+.header-top .container-fluid{
+    padding: 0 176px;
+}
+.bg-light{
+    background: #fff !important;
+}
+.navbar-brand{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #000 !important;
+}
+.navbar-brand img{
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px;
+}
+.navbar-light .navbar-nav .active{
+    color: #726EFF !important;
+}
+.register-login a{
+    color: #726EFF;  
+    font-weight: 700;
+    font-size: 15px; 
+    display: inline-block;
+}
+.register-login .register-info{
+    margin: 10px 20px;
+}
+.register-login .login-info{
+    border: 1px solid #726EFF;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb{
+    background: #F2F2F2;
+    padding-left: 201px;
+    margin-bottom: 31px;
+}
+.breadcrumb-item{
+    font-size: 10px;
+    line-height: 12px;
+    padding: 10px 0;
+}
+.breadcrumb-item a,
+.breadcrumb .active{
+    color: #4F4F4F;
+}
+
+/* About */
+.about{
+    margin-bottom: 14px;
+}
+.about .container-fluid{
+    padding: 0 200px;
+}
+/* Consultation Fee */
+.consultation-fee .doctor-img{
+    margin-right: 25px;
+}
+.consultation-fee h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.consultation-fee h5 img{
+    width: 10px;
+    height: 10px;
+    margin-left: 14px;
+}
+.consultation-fee h5 span{
+    font-size: 10px;
+    line-height: 12px;
+    color: #27AE60;
+}
+.dermatologist{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #fff;
+    background: #17234D;
+    border-radius: 5px;
+    padding: 2px 10px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.reviews{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.reviews .fa-star{
+    color: #F2C94C;
+    font-size: 15px;
+}
+.reviews span{
+    color: #BDBDBD;
+    padding: 0 10px;
+}
+.five-years{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+}
+.consultation-fee h6{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    margin-bottom: 0;
+}
+.consultation-fee h6 span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+}
+/* Nav */
+.nav{
+    border-bottom: 2px solid #F2F2F2;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.nav .nav-link{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #4F4F4F;
+    padding: 10px 25px;
+    margin-bottom: -2px;
+}
+.nav .active,
+.nav .nav-link:hover{
+    color: #000;
+    border-bottom: 2px solid #726EFF;
+}
+
+/* About Text */
+.about-text p{
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    margin-bottom: 31px;
+}
+.about-text h6{
+    font-weight: 600; 
+    font-size: 15px;
+    line-height: 18px;
+    color: #17234D;
+    margin-bottom: 11px;
+}
+.about-text h6 img{
+    margin-right: 12px;
+}
+.about-text ul li{
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    padding-bottom: 10px;
+    margin-left: 12px;
+}
+.about-text ul {
+    list-style: none;
+  }
+.about-text ul li::before {
+    content: "\2022";
+    color: #C4C4C4;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* About Right */
+.book-slot{
+    width: 422px;
+    height: auto;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px 35px 25px;
+    margin-left: 28px;
+}
+.consult-doctor{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #828282;
+    margin-bottom: 10px;
+}
+.about-right h6{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.vl{
+    border-left: 1px solid #BDBDBD;
+    height: 320px;
+    margin-top: 21px;
+    margin-right: 15px;
+    margin-left: 8px;
+}
+.vl span{
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #828282;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 1px 4px;
+    margin-left: -9px;
+    background: #fff;
+}
+.vl span:nth-child(2){
+    margin-top: 71px;
+    margin-bottom: 65px;
+}
+.vl span:nth-child(3){
+    margin-bottom: 132px;
+}
+.patient-details label{
+    color: #4F4F4F;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.patient-details .form-select,
+.patient-details .form-control{
+    border-radius: 5px;
+    border-color: #E0E0E0;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+}
+.patient-details .problem{
+    line-height: 18px;
+    color: #4f4f4f;
+    resize: none;
+    padding: 10px 13px !important;
+}
+.patient-details .form-select{
+    padding: 7px 13px 8px 9px;
+}
+.patient-details .form-control{
+    padding: 7px 15px 8px;
+}
+.patient-details .form-select:focus,
+.patient-details .form-control:focus{
+    box-shadow: none;
+}
+.appointment-date-left{
+    width: calc(100% - 32px);
+    margin-right: 10px;
+}
+.appointment-date-right{
+    border: 1px solid #E0E0E0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.appointment-date-right .fa-calendar-alt{
+    color: #828282;
+    font-size: 13px;
+}
+.slots-left{
+    display: block;
+}
+.slots-left span{
+    font-size: 10px;
+    line-height: 12px;
+    color: #27AE60;
+    margin-left: 10px;
+}
+
+.form-check{
+    margin-right: 5px;
+    padding-left: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+.form-check label{
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #333;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 5px 10px 5px 26px;
+}
+.form-check .form-check-input{
+    position: absolute;
+    margin-left: 6px;
+    margin-right: 6px;
+    border: none;
+}
+.form-check-input:checked[type=radio]{
+    background-image: url(/img/icons/purple-tick.png);
+}
+.form-check-input:checked {
+    background-color: #fff;
+}
+.form-check .form-check-input:focus{
+    box-shadow: none;
+}
+
+.patient-details .d-grid{
+    margin-top: 23px;
+}
+.patient-details .btn{
+    background: #726EFF;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    padding: 13px 13px 12px;
+}
+.form-p9{
+    padding: 9px 8px;
+}
+
+/* Clinic Info */
+.clinic-info{
+    margin-top: 1px;
+}
+.clinic-info ul li::before{
+    content: none;
+}
+.clinic-info ul{
+    margin-bottom: 35px;
+}
+.clinic-info ul li{
+    margin-left: 0;
+    padding-bottom: 5px;
+}
+.clinic-info img{
+    margin-right: 15px !important;
+}
+
+.clinic-bottom{
+    background: #f2f2f2;
+    border-radius: 5px;
+    padding: 7px 15px 8px;
+    margin: 0 15px;
+    margin-left: 12px;
+    margin-bottom: 120px;
+}
+.clinic-bottom p,
+.clinic-bottom h6{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+    margin-bottom: 0;
+}
+.clinic-bottom h6{
+    font-weight: 600;
+    color: #000;
+}
+
+/* Ratings */
+.ratings-reviews{
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px;
+}
+.image-name img{
+    margin-right: 10px;
+}
+.image-name h6{
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.image-name p{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #828282; 
+    margin-bottom: 0;
+}
+.image-name .fa-star{
+    color: #F2C94C;
+    font-size: 15px;
+}
+.reviews-p p{
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0;
+    color: #4F4F4F;
+    text-align: justify;
+    margin-top: 20px;
+}

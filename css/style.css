@@ -1,0 +1,418 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-fluid{
+    max-width: 1440px;
+    height: auto;
+}
+
+/* Header */
+.header-top{
+    margin-top: 32px;
+    margin-bottom: 25px;
+}
+.header-top .container-fluid{
+    padding: 0 176px;
+}
+.bg-light{
+    background: #fff !important;
+}
+.navbar-brand{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #000 !important;
+}
+.navbar-brand img{
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px;
+}
+.navbar-light .navbar-nav .active{
+    color: #726EFF !important;
+}
+.register-login a{
+    color: #726EFF;  
+    font-weight: 700;
+    font-size: 15px; 
+    display: inline-block;
+}
+.register-login .register-info{
+    margin: 10px 20px;
+}
+.register-login .login-info{
+    border: 1px solid #726EFF;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* Appointment */
+.appointment .container-fluid{
+    padding-right: 200px;
+}
+.appointment-left{
+    background: url(/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+.appointment-start{
+    max-width: 384px;
+    height: auto;
+    margin-left: 235px;
+}
+.appointment-top{
+    color: #828282;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.appointment-start h2{
+    color: #000;
+    font-weight: 800;
+    font-size: 48px;
+}
+.appointment-start form{
+    padding: 14px 22px 30px;
+    border: 1px solid #726EFF;
+    margin-top: 16px;
+    border-radius: 20px;
+    background: #fff;
+    max-width: 360px;
+}
+.appointment-start label{
+    color: #4F4F4F;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    line-height: 15px;
+}
+.appointment-start .form-select, .appointment-left .form-control{
+    border-radius: 10px;
+    border-color: #BDBDBD;
+}
+.appointment-start .form-select:focus, .appointment-left .form-control:focus{
+    box-shadow: none;
+}
+.appointment-date-left{
+    width: calc(100% - 40px);
+    margin-right: 10px;
+}
+.appointment-date-right{
+    border: 1px solid #BDBDBD;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.appointment-date-right .fa-calendar-alt{
+    color: #828282;
+}
+.appointment-start .form-control{
+    border: none;
+}
+.location-icon{
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+.location-icon img{
+    width: 20px;
+    height: 20px;
+}
+.appointment-start .d-grid{
+    margin-top: 40px;
+}
+.appointment-start .btn{
+    background: #726EFF;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 11px;
+}
+.form-p9{
+    padding: 9px 8px;
+}
+
+/* Appointment End */
+.top-doctors h1{
+    font-size: 100px;
+    color: #17234D;
+    font-family: 'Aclonica', sans-serif;
+    font-weight: 400;
+    margin-bottom: -30px;
+    margin-top: 42px;
+}
+.top-doctors h4{
+    color: #726EFF;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+.top-doctors p{
+    font-size: 12px;
+    color: #4F4F4F;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-left: 50px;
+}
+
+/* Appointment Right */
+.emergency-number{
+    margin-bottom: 60px;
+}
+.emergency-number p{
+    color: #EB5757;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.emergency-number span{
+    color: #000;
+    font-size: 20px;
+}
+
+.social-icons{
+    color: #4F4F4F;
+}
+
+.also-social{
+    transform: rotate(270deg);
+    margin-right: -65px;
+    margin-top: 165px;
+}
+.also-social p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0;
+}
+
+/* Apps */
+.apps{
+    margin-top: 150px;
+}
+.apps img{
+    width: 100%;
+}
+.apps-right{
+    max-width: 442px;
+    height: auto;
+    margin-top: 75px;
+}
+.apps-right h2{
+    font-size: 48px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 58.51px;
+}
+.apps-right p{
+    font-size: 12px;
+    text-align: justify;
+    color: #4F4F4F;
+    margin-bottom: 11px;
+    padding-right: 6px;
+    line-height: 14.63px;
+}
+.play-store{
+    width: 55.5%;
+    margin-left: -10px;
+}
+.app-store{
+    width: 44.5%;
+}
+.app-store img{
+    margin-top: 14px;
+}
+
+
+/* Services */
+.services{
+    padding: 150px 0;
+    background: linear-gradient(180deg, rgba(90, 255, 231, 0) 0%, rgba(90, 255, 231, 0.1) 52.08%, rgba(90, 255, 231, 0.4) 100%);
+}
+.services h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 52px
+}
+.services-inner{
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-column-gap: 40px;
+    grid-row-gap: 38px;
+}
+.service-box .fa-cube{
+    font-size: 20px;
+}
+.service-box p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #4F4F4F;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+
+
+
+.modal-header{
+    border-bottom: none;
+    margin-bottom: -38px;
+}
+.modal-header .btn-close{
+    margin: 23px !important;
+}
+.modal-header .btn-close:hover{
+    box-shadow: none;
+}
+
+.modal-body{
+    padding: 0px 55px 40px 40px;
+}
+.signup-login{
+    margin-bottom: 30px;
+}
+.sign-up,
+.log-in,
+.log-in:hover{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #BDBDBD;
+}
+.sign-up{
+    margin-right: 60px;
+}
+.signup-login .active{
+    color: #726EFF;
+}
+.signup-login:hover{
+    color: #726EFF;
+}
+.modal-body label{
+    color: #4F4F4F;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    line-height: 15px;
+}
+.modal-body .form-control{
+    border-radius: 8px;
+    border-color: #BDBDBD;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    padding: 12px 10px 13px;
+    width: 300px;
+}
+.modal-body .form-control:focus{
+    box-shadow: none;
+}
+.modal-phone-number{
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #000;
+}
+.modal-phone-number .form-control{
+    border: none;
+    width: 100%;
+}
+.modal-body .form-check-input{
+    border-color: #726EFF;
+}
+.modal-body .form-check-input:focus{
+    box-shadow: none;
+}
+.form-check-input:checked {
+    background-color: #726EFF;
+    border-color: #726EFF;
+}
+.modal-body .form-check-label{
+    margin-left: 0;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #000;    
+}
+.modal-body .btn-primary{
+    background: #726EFF;
+    border-radius: 8px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    width: 200px;
+    padding: 13px 12px 12px;
+    margin-top: 17px;
+}
+.otp-time p,
+.otp-time h5{
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+}
+.otp-time h5{
+    font-weight: 600;
+}
+.otp-number span{
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 8px;  
+    padding: 12px 14px 13px;
+}
+.send-otp{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BDBDBD;
+    padding-top: 20px;
+}
+.forgot{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #726EFF;
+    margin-right: 2px;
+}
+.w-300{
+    width: 300px;
+}
+.modal-body h6{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    margin-top: 10px;
+}
+.forgot-p{
+    padding-bottom: 8px;
+    width: 300px;
+    margin-top: 35px;
+}
+.forgot-p p{
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+}

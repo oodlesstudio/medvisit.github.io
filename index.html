@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+    <title>Medvisit</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <section class="header-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container">
+                            <a class="navbar-brand" href="index.html" title="Medvisit"><img src="img/icons/plus.png">
+                                Medvisit.</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About Us</a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex register-login">
+                                    <a href="#" class="register-info" data-bs-toggle="modal"
+                                        data-bs-target="#signup">Register</a>
+                                    <a href="#" class="login-info" data-bs-toggle="modal"
+                                        data-bs-target="#login">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Appointment -->
+    <section class="appointment">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Appointment Left -->
+                <div class="col-md-11 appointment-left d-flex">
+                    <!-- Appointment Start -->
+                    <div class="appointment-start">
+                        <p class="appointment-top">Fames quis viverra et feugiat.</p>
+                        <h2>Make an Appointment</h2>
+                        <form class="row g-3">
+                            <div class="col-12 d-flex">
+                                <div class="appointment-date-left">
+                                    <label for="inputState" class="form-label">Date of Appointment</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected></option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="appointment-date-right">
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 form-p9">
+                                <label for="inputState" class="form-label">Speciality</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected></option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputZip" class="form-label">Location</label>
+                                <div class="d-flex location-icon align-items-center">
+                                    <input type="text" class="form-control" id="inputZip">
+                                    <img src="img/icons/location.png">
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn" type="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Appointment End -->
+                    <div class="appointment-end">
+                        <div class="top-doctors text-end">
+                            <h1>#1</h1>
+                            <h4>Doctors</h4>
+                            <div class="text-center">
+                                <p>Lorem ipsum dolor s amet, adipng</p>
+                                <p>consectetur adipiscing elit. Vavdsrius</p>
+                                <p>scelerisque quis aliquet. Faucibuvdvs</p>
+                                <p>hendrerit sed massa ultrices sed</p>
+                                <p>arcu. Eget massa purus non</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Right -->
+                <div class="col-md-1 appointment-right justify-content-end text-end">
+                    <div class="emergency-number">
+                        <p>Emergency?</p>
+                        <span><img src="img/icons/phone.png"> 911</span>
+                    </div>
+
+                    <div class="social-icons d-flex flex-column">
+                        <div>
+                            <i class="fab fa-facebook-f mb-3 me-1"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-whatsapp mb-3 mt-1"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-twitter mb-3 mt-1"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram mb-3 mt-1"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-linkedin-in mt-1"></i>
+                        </div>
+                    </div>
+
+                    <div class="also-social">
+                        <p>We are also Social</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps -->
+    <section class="apps">
+        <div class="container">
+            <div class="row">
+                <!-- Apps Left -->
+                <div class="col-md-6 apps-left">
+                    <img src="img/devices.png" alt="Devices">
+                </div>
+
+                <!-- Apps Right -->
+                <div class="col-md-6 apps-right">
+                    <h2>App available on IOS and Android</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam non quis massa senectus
+                        tortor,
+                        lacus. Non ornare cursus et maecenas tortor. Iaculis lacinia id nec libero viverra at nibh
+                        quisque. Lectus mattis id ac purus. Auctor sit vestibulum viverra euismod convallis. Euismod
+                        quis integer diam auctor integer lectus.
+                    </p>
+                    <div class="row">
+                        <div class="col-6 play-store">
+                            <img src="img/play-store.png" alt="Play Store">
+                        </div>
+                        <div class="col-6 app-store">
+                            <img src="img/app-store.png" alt="App Store">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="text-center">
+                    Our Services
+                </h2>
+                <div class="services-inner justify-content-center">
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-cube"></i>
+                        <p>our services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Signup -->
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-start p-0">
+                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <img src="img/signup.png">
+                        </div>
+                        <div>
+                            <form>
+                                <div class="text-center signup-login">
+                                    <a href="#" class="sign-up active">Sign up</a>
+                                    <a href="#" class="log-in">Log in</a>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="inputName" value="Ryan Curtis">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputNumber" class="form-label">Phone Number</label>
+                                    <div class="d-flex align-items-center modal-phone-number">
+                                        <div>+124</div>
+                                        <div class="w-100">
+                                            <input type="tel" class="form-control" id="inputNumber" value="9999999999">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        value="123456789012345">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        value="123456789012345">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">I agree to terms and
+                                        conditions</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Sign up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-start p-0">
+                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <img src="img/login.png">
+                        </div>
+                        <div>
+                            <form>
+                                <div class="text-center signup-login">
+                                    <a href="#signup" class="sign-up">Sign up</a>
+                                    <a href="#" class="log-in active">Log in</a>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputNumber" class="form-label">Phone Number</label>
+                                    <div class="d-flex align-items-center modal-phone-number">
+                                        <div>+124</div>
+                                        <div class="w-100">
+                                            <input type="tel" class="form-control" id="inputNumber" value="9999999999">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        value="123456789012345">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                        <a href="#" class="forgot">Forgot Password</a>
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Login with OTP instead of
+                                        password</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Log In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Otp -->
+    <!-- <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-start p-0">
+                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <img src="img/login.png">
+                        </div>
+                        <div>
+                            <form>
+                                <div class="text-center signup-login">
+                                    <a href="#signup" class="sign-up">Sign up</a>
+                                    <a href="#" class="log-in active">Log in</a>
+                                </div>
+                                <div class="mb-4">
+                                    <p class="send-otp">We have sent you an OTP on</p>
+                                    <div class="d-flex justify-content-between otp-time">
+                                        <p><span class="me-2">+123</span>9999999999</p>
+                                        <h5>00:00 Seconds</h5>
+                                    </div>
+                                </div>
+                                <div class="mb-2 w-300">
+                                    <label for="exampleInputPassword1" class="form-label">Enter OTP</label>
+                                    <div class="otp-number d-flex mt-2 justify-content-between">
+                                        <div>
+                                            <span>3</span>
+                                        </div>
+                                        <div>
+                                            <span>3</span>
+                                        </div>
+                                        <div>
+                                            <span>3</span>
+                                        </div>
+                                        <div>
+                                            <span>3</span>
+                                        </div>
+                                        <div>
+                                            <span>3</span>
+                                        </div>
+                                        <div>
+                                            <span>3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between pt-2 w-300 mt-3 mb-5">
+                                    <label class="form-check-label ms-2" for="exampleCheck1">Still not received OTP?<a
+                                            href="#" class="forgot ms-1"> Get via call</a></label>
+                                    <a href="#" class="forgot">Resend OTP</a>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button type="submit" class="btn btn-primary">Log In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Forgot Password -->
+    <!-- <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-start p-0">
+                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <img src="img/login.png">
+                        </div>
+                        <div>
+                            <form class="">
+                                <div>
+                                    <h6 class="text-center">Forgot Password</h6>
+                                </div>
+                                <div class="mb-3 forgot-p">
+                                    <p>Enter the email address you used when you joined and we’ll send you instructions to reset your password.</p>
+                                    <p>For security reasons, we do NOT store your password. So rest assured that we will never send your password via email.</p>
+                                </div>
+                                <div class="mb-1 justify-content-end me-auto">
+                                    <label for="exampleInputPassword1" class="form-label">Enter Email Id/ Phone number</label>
+                                    <input type="tel" class="form-control" id="exampleInputPassword1"
+                                        value="9999999999">
+                                </div>
+                                <div class="text-center mt-4 pt-3">
+                                    <button type="submit" class="btn btn-primary">Send Reset Instructions</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Required JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
